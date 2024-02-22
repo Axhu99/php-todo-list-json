@@ -30,11 +30,7 @@
                         <h1 class="text-center">TODO list</h1>
                         <!-- Creo la mia lista di elementi -->
                         <ul class="list-group list-group-flush border border-1 rounded">
-                            <li class="list-group-item">1</li>
-                            <li class="list-group-item">1</li>
-                            <li class="list-group-item">1</li>
-                            <li class="list-group-item">1</li>
-                            <li class="list-group-item">1</li>
+                            <li class="list-group-item" v-for="(task, i) in tasks" :key="i">{{task.text}}</li>
                         </ul>
                     </div>
                 </div>
