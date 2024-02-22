@@ -37,6 +37,13 @@
                         <ul class="list-group list-group-flush border border-1 rounded">
                             <li class="list-group-item" v-for="task in tasks" :key="task.id">{{task.text}}</li>
                         </ul>
+                        <form action="" method="post">
+                            <div class="input-group mt-3">
+                                <input type="text" class="form-control" placeholder="Aggiungi...">
+                                <button class="btn btn-outline-success" type="submit" id="button-addon2">Button</button>
+                            </div>
+
+                        </form>
                     </div>
                 </div>
             </div>
