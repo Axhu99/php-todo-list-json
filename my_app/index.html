@@ -35,7 +35,8 @@
                         <h1 class="text-center">TODO list</h1>
                         <!-- Creo la mia lista di elementi -->
                         <ul class="list-group list-group-flush border border-1 rounded">
-                            <li class="list-group-item" v-for="task in tasks" :key="task.id">{{task.text}}</li>
+                            <li class="list-group-item" v-for="task in tasks" :key="task.id"
+                                :class="{'text-decoration-line-through': task.done}">{{task.text}}</li>
                         </ul>
                         <form action="" method="post">
                             <div class="input-group mt-3">
